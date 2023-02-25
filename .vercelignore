@@ -1,3 +1,7 @@
 .env
 .nuxt
 .vscode
+.nitro
+.cache
+.output
+dist
