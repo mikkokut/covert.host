@@ -27,10 +27,10 @@ openSecretIfExists()
 </script>
 
 <template>
-  <div class="my-20 mx-auto max-w-lg">
+  <div class="my-20 mx-auto max-w-lg px-3">
     <NewSecret @created="handleCreated" />
-    <div class="mt-10">
-      <strong class="text-gray-500">Created notes</strong>
+    <div v-if="createdSecrets.length > 0" class="mt-10">
+      <strong class="text-gray-500">Created secrets</strong>
 
       <div class="mt-3 flex flex-col gap-1">
         <div v-for="url in createdSecrets" :key="url" class="flex gap-1">
