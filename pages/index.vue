@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { LockClosedIcon } from '@heroicons/vue/20/solid'
-
 const openSecretIfExists = () => {
   if (!process.client)
     return
@@ -31,10 +29,7 @@ openSecretIfExists()
 <template>
   <div class="mx-auto flex min-h-screen max-w-lg flex-col justify-between px-3 pt-10 sm:pt-20">
     <div>
-      <p class="mb-2 flex items-center justify-end gap-1 pr-1 text-xs font-medium text-gray-500">
-        <LockClosedIcon class="inline h-3 w-3 text-gray-400" />
-        End-to-end encrypted
-      </p>
+      <E2EE />
       <NewSecret @created="handleCreated" />
       <div v-if="createdSecrets.length > 0" class="mt-10">
         <strong class="text-gray-500">Created secrets</strong>

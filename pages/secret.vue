@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { } from '@heroicons/vue/20/solid'
+import { ArrowRightOnRectangleIcon } from '@heroicons/vue/20/solid'
 
 const secretFromSession = useSessionStorage('secret', '')
 
@@ -40,6 +40,7 @@ const logout = () => {
 <template>
   <div>
     <div class="mx-auto my-20 max-w-lg p-3">
+      <E2EE v-if="content" />
       <div class="overflow-hidden rounded-lg border border-gray-300 bg-white shadow-md">
         <div v-if="hasFailed" class="p-4">
           ERROR
@@ -48,8 +49,9 @@ const logout = () => {
           <label for="content" class="sr-only">Content</label>
           <ContentEditor id="content" v-model="content" readonly />
           <div class="flex justify-end border-t border-gray-300 p-3">
-            <button @click="logout">
-              Logout
+            <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2" @click="logout">
+              <ArrowRightOnRectangleIcon class="mr-2 h-4 w-4 text-gray-100 transition-transform" />
+              Log out
             </button>
           </div>
         </div>
