@@ -25,6 +25,7 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.16",
     "@supabase/supabase-js": "^2.8.0",
     "@tiptap/extension-character-count": "^2.0.0-beta.218",
     "@tiptap/extension-placeholder": "^2.0.0-beta.218",

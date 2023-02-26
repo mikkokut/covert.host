@@ -31,7 +31,7 @@ const editor = useEditor({
   extensions: [
     StarterKit,
     Placeholder.configure({
-      placeholder: 'Write your secret note here...',
+      placeholder: 'Write here...',
     }),
     CharacterCount.configure({
       limit: props.limit ?? null,
@@ -51,6 +51,9 @@ watch(() => props.modelValue, (value) => {
     return
 
   editor.value?.commands.setContent(value)
+
+  // setContent() doesn't trigger onUpdate()
+  emit('characterCount', editor.value?.storage.characterCount.characters())
 })
 </script>
 
