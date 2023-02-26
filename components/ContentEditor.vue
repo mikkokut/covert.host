@@ -55,7 +55,7 @@ watch(() => props.modelValue, (value) => {
 </script>
 
 <template>
-  <EditorContent :editor="editor" />
+  <EditorContent :editor="editor" class="min-h-[60px]" />
 </template>
 
 <style lang="css">
