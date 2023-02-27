@@ -5,3 +5,4 @@
 .cache
 .output
 dist
+.env.sample

@@ -39,7 +39,7 @@ const logout = () => {
 
 <template>
   <div>
-    <div class="mx-auto my-20 max-w-lg p-3">
+    <div class="mx-auto max-w-lg px-3">
       <E2EE v-if="content" />
       <div class="overflow-hidden rounded-lg border border-gray-300 bg-white shadow-md">
         <div v-if="hasFailed" class="p-4">
@@ -48,7 +48,7 @@ const logout = () => {
         <div v-else-if="content">
           <label for="content" class="sr-only">Content</label>
           <ContentEditor id="content" v-model="content" readonly />
-          <div class="flex justify-end border-t border-gray-300 p-3">
+          <div class="flex justify-end border-t border-gray-300 p-2">
             <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2" @click="logout">
               <ArrowRightOnRectangleIcon class="mr-2 h-4 w-4 text-gray-100 transition-transform" />
               Log out
@@ -56,7 +56,7 @@ const logout = () => {
           </div>
         </div>
         <div v-else class="flex items-center justify-center p-4">
-          <IconSpinner class="text-gray-700" />
+          <IconSpinner class="!text-gray-600" />
         </div>
       </div>
     </div>

@@ -1,42 +1,41 @@
-# Nuxt 3 Minimal Starter
+# Covert.host
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Simple end-to-end encrypted shareable notes.
 
-## Setup
+## Stack
 
-Make sure to install the dependencies:
+- [TailwindCSS](https://tailwindcss.com/)
+- [Nuxt](https://nuxt.com/)
+- [Vercel](https://vercel.com/)
+- [PlanetScale](https://planetscale.com)
+
+
+## Local development
+
+### Pre-requisites
+- [Node.js](https://nodejs.org/en/) installed
+- [PlanetScale](https://planetscale.com) database.
+
+### Add `.env` file
+
 
 ```bash
-# yarn
+mv .env.sample .env
+```   
+And update with your PlanetScale credentials.
+
+### Install dependencies
+
+```bash
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
+### Run development server
 
 ```bash
-npm run dev
+yarn dev
 ```
 
-## Production
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Security
+If you discover any security related issues, please email [mikkokut@gmail.com](mailto:mikkokut@gmail.com) instead of using using GitHub issues.
