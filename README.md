@@ -7,14 +7,14 @@ Simple end-to-end encrypted shareable notes.
 - [TailwindCSS](https://tailwindcss.com/)
 - [Nuxt](https://nuxt.com/)
 - [Vercel](https://vercel.com/)
-- [PlanetScale](https://planetscale.com)
+- [Supabase](https://supabase.com/)
 
 
 ## Local development
 
 ### Pre-requisites
 - [Node.js](https://nodejs.org/en/) installed
-- [PlanetScale](https://planetscale.com) database.
+- [Supabase](https://supabase.com/) database.
 
 ### Add `.env` file
 
@@ -22,7 +22,7 @@ Simple end-to-end encrypted shareable notes.
 ```bash
 mv .env.sample .env
 ```   
-And update with your PlanetScale credentials.
+And update with your Supabase credentials.
 
 ### Install dependencies
 
