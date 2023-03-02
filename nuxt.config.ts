@@ -17,4 +17,8 @@ export default defineNuxtConfig({
       eslintPlugin(),
     ],
   },
+  typescript: {
+    typeCheck: true,
+    strict: true,
+  },
 })
