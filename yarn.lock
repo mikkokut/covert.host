@@ -6777,10 +6777,10 @@ stylehacks@^5.1.1:
     browserslist "^4.21.4"
     postcss-selector-parser "^6.0.4"
 
-supabase@^1.42.0:
-  version "1.42.0"
-  resolved "https://registry.yarnpkg.com/supabase/-/supabase-1.42.0.tgz#1bad10d78aab51604d94bbbdbaadbbf194184e16"
-  integrity sha512-8a0hptf5p9sMfw/rCgKlMs3UFh4swBeH9GfPH4/UKmp/hseyDUhK+TNUlW0AS6j9D05AnD+0I5X4i1NtKrJdCw==
+supabase@^1.45.2:
+  version "1.45.2"
+  resolved "https://registry.yarnpkg.com/supabase/-/supabase-1.45.2.tgz#1e69196d3d38881a17957317a20588f036448897"
+  integrity sha512-M9Mk8+pj6F5sTGS8m0lDlOQ5WUgI6TWQBL8wnSobq834ZwImUgn6731NDoetsUd2GFsG7DFffPU+HzgLWbnqkQ==
   dependencies:
     bin-links "^4.0.1"
     node-fetch "^3.2.10"
